@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(14, 15, 17); */
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+li,
+a,
+button {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(25, 24, 26);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.list_buttons {
+  list-style: none;
+}
+
+.list_buttons li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list_buttons li a {
+  transition: 0.3s ease 0s;
+}
+.list_buttons li a:hover {
+  color: blueviolet;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0, 3s ease 0s;
+}
+
+button:hover {
+  background-color: rgb(132, 0, 255);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.logo {
+  margin-right: auto;
+}
+body {
+  background-color: rgb(14, 15, 17);
+}
+/* v.imp */
+.hero_heading {
+  font-size: 65px;
+  color: aliceblue;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(132, 0, 255);
+  padding: 10px;
+}
+
+.hero {
+  display: flex;
+}
+
+.hero_image {
+  width: 45%;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.services h1 {
+  padding-top: 100px;
+  /* background-color: rgb(132, 0, 255); */
+  background-image: linear-gradient(to right, rgb(132, 0, 255));
+  color: aliceblue;
+  background-size: 100%;
+  font-size: 2.5rem;
+}
+
+.services_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service_card {
+  margin: 1rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-color: blueviolet;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 17) 100%
+    ),
+    url("images/rl_home_f2p-launch_cross_square_10016.jpg");
+  background-size: cover;
+  position: relative;
+  color: aliceblue;
+}
+
+.service_card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 17) 100%
+    ),
+    url("images/gta.jpg");
+}
+
+.services h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.services p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+.services button {
+  position: absolute;
+  padding: auto;
+  border: none;
+  outline: none;
+  top: 440px;
+  left: 30px;
+}
+
+.service_card:hover {
+  transform: translate(6px, -6px);
+  /* transform: scale(1.075); */
+  /* transition: 0.2s ease-in; */
+  /* border: 2px blueviolet; */
+}
+.stream:hover .stream__thumbnail {
+  transform: translate(6px, -6px);
+}
+
+.service_card:hover:before {
+  transform: rotate(-45deg) scale(1);
+}
+
+.service_card:hover:after {
+  transform: rotate(45deg) scale(1);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: blueviolet;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  padding: 15px;
+}
+
+.list {
+  display: flex;
+  /* align-items: center; */
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  justify-content: space-around;
+  padding: 15px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.copyright {
+  color: aliceblue;
+  text-align: center;
+  padding: 35px;
+}
