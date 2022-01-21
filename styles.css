@@ -15,27 +15,52 @@ button {
   text-decoration: none;
 }
 
-header {
+.navbar {
   background-color: rgb(25, 24, 26);
+  height: 80px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 10px 10%;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.nav_elements {
+  display: flex;
 }
 
 .list_buttons {
   list-style: none;
 }
 
-.list_buttons li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
 .list_buttons li a {
   transition: 0.3s ease 0s;
 }
 .list_buttons li a:hover {
+  border-bottom: 2px #fff solid;
   color: blueviolet;
 }
 
@@ -59,7 +84,7 @@ button:hover {
 }
 
 .logo {
-  margin-right: auto;
+  margin: 10px 0;
 }
 body {
   background-color: rgb(14, 15, 17);
@@ -181,9 +206,6 @@ body {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
   background-color: blueviolet;
 }
 
@@ -213,4 +235,64 @@ body {
   color: aliceblue;
   text-align: center;
   padding: 35px;
+}
+
+.roles {
+  font-size: 35px;
+  margin: 10px 25%;
+}
+
+.roles p {
+  color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    height: 130px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero img {
+    visibility: hidden;
+    margin-left: 25%;
+    height: auto;
+  }
+
+  .hero_heading {
+    font-size: 5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+
+  .services h1 {
+    padding: 0;
+    display: flex;
+    text-align: center;
+  }
+
+  .footer {
+    visibility: hidden;
+  }
+
+  .roles {
+    font-size: larger;
+    text-align: center;
+  }
 }
